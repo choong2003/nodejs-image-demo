@@ -19,6 +19,8 @@ router.get('/sharks',function(req,res){
 });
 
 app.use(express.static(path));
+app.use(express.static('public'));
+
 app.use('/', router);
 
 app.listen(port, function () {
